@@ -11,7 +11,7 @@ const removeFromArray = function(array, ...targets) {
       }
     }
     if (targetIndex == -1) continue;
-    array = array.slice(0, targetIndex).concat(array.slice(targetIndex+1));
+    array.splice(targetIndex, 1);
   }
   return array;
 };
